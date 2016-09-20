@@ -18,7 +18,7 @@ public class Cuboid {
 		
 	}
 	
-	public String Render (string render);
+	//public String Render (string render);
 	
-	System.out.println( helloString );
+	//System.out.println( helloString );
 }
