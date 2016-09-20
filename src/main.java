@@ -20,6 +20,8 @@ public class main {
 		// git practice
 		
 		//#khj li
+		
+		// success?
 
 	}
 
