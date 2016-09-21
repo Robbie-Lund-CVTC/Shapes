@@ -48,7 +48,7 @@ public class Cuboid extends Shape implements ICuboid {
 	 */
 	@Override
 	public float getHeight() {
-		return 0;
+		return height;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class Cuboid extends Shape implements ICuboid {
 	 */
 	@Override
 	public float getLength() {
-		return 0;
+		return length;
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class Cuboid extends Shape implements ICuboid {
 	 */
 	@Override
 	public float getWidth() {
-		return 0;
+		return width;
 	}
 
 	/**
@@ -99,7 +99,10 @@ public class Cuboid extends Shape implements ICuboid {
 	 * @return the string
 	 */
 	public String Render() {
-		return "";
+		String expected = "Height: " + height + " Length: " + length + " Width: " + width + " Volume: " + Volume()
+				+ " Surface Area: " + SurfaceArea();
+
+		return expected;
 	}
 
 	/**
@@ -109,8 +112,7 @@ public class Cuboid extends Shape implements ICuboid {
 	 */
 	@Override
 	public float SurfaceArea() {
-		return 0;
-		// return 2 * width * length + 2 * length * height + 2 * height * width;
+		return 2 * width * length + 2 * length * height + 2 * height * width;
 	}
 
 	/**
@@ -120,8 +122,7 @@ public class Cuboid extends Shape implements ICuboid {
 	 */
 	@Override
 	public float Volume() {
-		return 0;
-		// return height * width * length;
+		return height * width * length;
 	}
 
 }

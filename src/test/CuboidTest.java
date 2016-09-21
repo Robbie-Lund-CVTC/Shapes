@@ -79,7 +79,7 @@ public class CuboidTest {
 	@Test
 	public void testGetHeight() {
 		float result = cuboid.getHeight();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(height, result, Constants.DELTA);
 	}
 
 	/**
@@ -97,7 +97,7 @@ public class CuboidTest {
 	@Test
 	public void testGetLength() {
 		float result = cuboid.getLength();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(length, result, Constants.DELTA);
 	}
 
 	/**
@@ -115,7 +115,7 @@ public class CuboidTest {
 	@Test
 	public void testGetWidth() {
 		float result = cuboid.getWidth();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(width, result, Constants.DELTA);
 	}
 
 	/**
@@ -124,7 +124,8 @@ public class CuboidTest {
 	@Test
 	public void testCuboidRender() {
 		String result = cuboid.Render();
-		String expected = "";
+		String expected = "Height: " + cuboid.height + " Length: " + cuboid.length + " Width: " + cuboid.width
+				+ " Volume: " + cuboid.Volume() + " Surface Area: " + cuboid.SurfaceArea();
 
 		assertEquals(expected, result);
 	}
@@ -135,7 +136,7 @@ public class CuboidTest {
 	@Test
 	public void testSurfaceArea() {
 		float result = cuboid.SurfaceArea();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(236, result, Constants.DELTA);
 	}
 
 	/**
@@ -144,7 +145,7 @@ public class CuboidTest {
 	@Test
 	public void testVolume() {
 		float result = cuboid.Volume();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(240, result, Constants.DELTA);
 	}
 
 }
