@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package main;
 
 /**
@@ -34,4 +35,25 @@ public interface ISphere {
 	 * @return the radius
 	 */
 	public float getRadius();
+=======
+/**
+ * 
+ */
+package main;
+
+/**
+ * @author Ryan
+ *
+ */
+public interface ISphere {
+
+	public void setDiameter(float diameter);
+
+	public float getDiameter();
+
+	public void setRadius(float radius);
+
+	public float getRadius();
+
+>>>>>>> features/rruf7
 }
