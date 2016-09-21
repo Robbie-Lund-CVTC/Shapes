@@ -1,5 +1,6 @@
 package main;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class Cone.
  */
@@ -19,10 +20,9 @@ public class Cone extends Shape implements ICone, IRenderer {
 	/**
 	 * Instantiates a new cone.
 	 *
-	 * @param height
-	 *            the height
-	 * @param radius
-	 *            the radius
+	 * @param height            the height
+	 * @param radius            the radius
+	 * @param messageBox the message box
 	 */
 	public Cone(float height, float radius, IMessageBox messageBox) {
 		super(messageBox);
