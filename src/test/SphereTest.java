@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-<<<<<<< HEAD
 import main.Constants;
 import main.Sphere;
 
@@ -12,12 +11,6 @@ import main.Sphere;
  * The Class SphereTest.
  */
 public class SphereTest {
-=======
-import main.Sphere;
-import main.Constants;
-
-class SphereTest {
->>>>>>> features/rruf7
 
 	/** The diameter. */
 	private float diameter = 10;
@@ -29,17 +22,10 @@ class SphereTest {
 	private Sphere sphere = new Sphere(diameter, radius);
 
 	/**
-<<<<<<< HEAD
 	 * Test sphere constructor.
 	 */
 	@Test
-	public void testSphereConstructor() {
-=======
-	 * Test Sphere constructor.
-	 */
-	@Test
 	public void testConeConstructor() {
->>>>>>> features/rruf7
 		float diameter = sphere.diameter;
 		float radius = sphere.radius;
 		assertEquals(this.diameter, diameter, Constants.DELTA);
@@ -47,11 +33,7 @@ class SphereTest {
 	}
 
 	/**
-<<<<<<< HEAD
 	 * Test diameter.
-=======
-	 * Test Diameter.
->>>>>>> features/rruf7
 	 */
 	@Test
 	public void testDiameter() {
@@ -108,11 +90,7 @@ class SphereTest {
 	 * Test sphere render.
 	 */
 	@Test
-<<<<<<< HEAD
 	public void testSphereRender() {
-=======
-	public void testConeRender() {
->>>>>>> features/rruf7
 		String result = sphere.Render();
 		String expected = "Diameter: " + sphere.diameter + " Radius: " + sphere.radius + " Volume: " + sphere.Volume()
 				+ " Surface Area: " + sphere.SurfaceArea();

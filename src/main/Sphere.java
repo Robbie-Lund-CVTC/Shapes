@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-package main;
-
-public class Sphere extends Shape implements ISphere {
-
-	public float diameter;
-	public float radius;
-
-=======
-/**
- * 
- */
 package main;
 
 /**
@@ -32,21 +20,19 @@ public class Sphere extends Shape implements ISphere{
 	 * @param radius - the radius
 	 * 
 	 */
->>>>>>> features/rruf7
 	public Sphere(float diameter, float radius) {
 		this.diameter = diameter;
 		this.radius = radius;
 	}
 
-<<<<<<< HEAD
-	@Override
-=======
+	
 	
 	/**
 	 * Gets the diameter.
 	 *
 	 * @return the diameter
 	 */
+	@Override
 	public float getDiameter() {
 		return diameter;
 	}
@@ -58,25 +44,18 @@ public class Sphere extends Shape implements ISphere{
 	 * @param radius -the new diamter
 	 *            
 	 */
->>>>>>> features/rruf7
+	@Override
 	public void setDiameter(float diameter) {
 		this.diameter = diameter;
 	}
 
-<<<<<<< HEAD
-	@Override
-	public float getDiameter() {
-		return diameter;
-	}
-
-	@Override
-=======
 
 	/**
 	 * Gets the radius.
 	 *
 	 * @return the radius
 	 */
+	@Override
 	public float getRadius() {
 		return radius;
 	}
@@ -88,31 +67,10 @@ public class Sphere extends Shape implements ISphere{
 	 * @param radius -the new radius
 	 *            
 	 */
->>>>>>> features/rruf7
+	@Override
 	public void setRadius(float radius) {
 		this.radius = radius;
 	}
-
-<<<<<<< HEAD
-	@Override
-	public float getRadius() {
-		return radius;
-	}
-
-	public String Render() {
-		return "Diameter: " + diameter + " Radius: " + radius + " Volume: " + Volume() + " Surface Area: "
-				+ SurfaceArea();
-	}
-
-	@Override
-	public float SurfaceArea() {
-		return (float) (4 * Math.PI * Math.pow(radius, 2));
-	}
-
-	@Override
-	public float Volume() {
-		return (float) ((4 * Math.PI * Math.pow(radius, 3)) / 3);
-=======
 
 	/**
 	 * Render the sphere and show its specifications.
@@ -130,7 +88,7 @@ public class Sphere extends Shape implements ISphere{
 	 * @return the float
 	 */
 	@Override
-	float SurfaceArea() {
+	public float SurfaceArea() {
 		return (float)(4 * Math.PI * Math.pow(radius, 2));
 	}
 
@@ -140,9 +98,8 @@ public class Sphere extends Shape implements ISphere{
 	 * @return the float
 	 */
 	@Override
-	float Volume() {
-		return (float) (4/3 * Math.PI * Math.pow(radius, 3));
->>>>>>> features/rruf7
+	public float Volume() {
+		return (float) ((4 * Math.PI * Math.pow(radius, 3)) / 3);
 	}
 
 }
