@@ -5,10 +5,15 @@ package main;
  */
 abstract class Shape {
 
+	protected IMessageBox messageBox;
+	
 	/**
 	 * Instantiates a new shape.
 	 */
-	public Shape() {
+	public Shape(IMessageBox messageBox) {
+		
+		this.messageBox = messageBox;
+		
 	}
 
 	/**

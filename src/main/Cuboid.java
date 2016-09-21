@@ -3,7 +3,7 @@ package main;
 /**
  * The Class Cuboid.
  */
-public class Cuboid extends Shape implements ICuboid {
+public class Cuboid extends Shape implements ICuboid, IRenderer {
 
 	/** The height. */
 	public float height;
@@ -24,7 +24,8 @@ public class Cuboid extends Shape implements ICuboid {
 	 * @param width
 	 *            the width
 	 */
-	public Cuboid(float height, float length, float width) {
+	public Cuboid(float height, float length, float width, IMessageBox messageBox) {
+		super(messageBox);
 		this.height = height;
 		this.length = length;
 		this.width = width;

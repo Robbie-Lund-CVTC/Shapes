@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import main.Cone;
 import main.Constants;
+import main.IMessageBox;
 
 /**
  * The Class ConeTest.
@@ -17,9 +18,11 @@ public class ConeTest {
 
 	/** The radius. */
 	private float radius = 5;
+	
+	private IMessageBox messageBox;
 
 	/** The cone. */
-	private Cone cone = new Cone(height, radius);
+	private Cone cone = new Cone(height, radius, messageBox);
 
 	/**
 	 * Test cone constructor.

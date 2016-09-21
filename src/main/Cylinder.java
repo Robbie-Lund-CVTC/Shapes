@@ -3,7 +3,7 @@ package main;
 /**
  * The Class Cylinder.
  */
-public class Cylinder extends Shape implements ICylinder {
+public class Cylinder extends Shape implements ICylinder, IRenderer {
 
 	/** The diameter. */
 	public float diameter;
@@ -24,7 +24,8 @@ public class Cylinder extends Shape implements ICylinder {
 	 * @param radius
 	 *            the radius
 	 */
-	public Cylinder(float diameter, float height, float radius) {
+	public Cylinder(float diameter, float height, float radius, IMessageBox messageBox) {
+		super(messageBox);
 		this.diameter = diameter;
 		this.height = height;
 		this.radius = radius;

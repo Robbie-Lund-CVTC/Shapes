@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import main.Constants;
 import main.Cuboid;
+import main.IMessageBox;
 
 /**
  * The Class CuboidTest.
@@ -20,9 +21,11 @@ public class CuboidTest {
 
 	/** The width. */
 	private float width = 6;
+	
+	private IMessageBox messageBox;
 
 	/** The cuboid. */
-	private Cuboid cuboid = new Cuboid(height, length, width);
+	private Cuboid cuboid = new Cuboid(height, length, width, messageBox);
 
 	/**
 	 * Test cuboid constructor.

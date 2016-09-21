@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import main.Constants;
 import main.Cylinder;
+import main.IMessageBox;
 
 /**
  * The Class CylinderTest.
@@ -20,9 +21,11 @@ public class CylinderTest {
 
 	/** The radius. */
 	private float radius = 3;
+	
+	private IMessageBox messageBox;
 
 	/** The cylinder. */
-	private Cylinder cylinder = new Cylinder(diameter, height, radius);
+	private Cylinder cylinder = new Cylinder(diameter, height, radius, messageBox);
 
 	/**
 	 * Test Cylinder constructor.

@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import main.Constants;
+import main.IMessageBox;
 import main.Sphere;
 
 /**
@@ -17,9 +18,11 @@ public class SphereTest {
 
 	/** The radius. */
 	private float radius = 5;
+	
+	private IMessageBox messageBox;
 
 	/** The sphere. */
-	private Sphere sphere = new Sphere(diameter, radius);
+	private Sphere sphere = new Sphere(diameter, radius, messageBox);
 
 	/**
 	 * Test sphere constructor.

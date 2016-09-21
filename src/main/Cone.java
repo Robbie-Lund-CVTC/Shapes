@@ -8,7 +8,7 @@ package main;
  * @author Fong L
  *
  */
-public class Cone extends Shape implements ICone {
+public class Cone extends Shape implements ICone, IRenderer {
 
 	/** The height. */
 	public float height;
@@ -24,7 +24,8 @@ public class Cone extends Shape implements ICone {
 	 * @param radius
 	 *            the radius
 	 */
-	public Cone(float height, float radius) {
+	public Cone(float height, float radius, IMessageBox messageBox) {
+		super(messageBox);
 		this.height = height;
 		this.radius = radius;
 	}

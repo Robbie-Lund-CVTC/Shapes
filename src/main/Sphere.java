@@ -4,7 +4,7 @@ package main;
  * @author Ryan
  *
  */
-public class Sphere extends Shape implements ISphere{
+public class Sphere extends Shape implements ISphere, IRenderer{
 	
 	/* Diameter */
 	public float diameter;
@@ -20,7 +20,8 @@ public class Sphere extends Shape implements ISphere{
 	 * @param radius - the radius
 	 * 
 	 */
-	public Sphere(float diameter, float radius) {
+	public Sphere(float diameter, float radius, IMessageBox messageBox) {
+		super(messageBox);
 		this.diameter = diameter;
 		this.radius = radius;
 	}
