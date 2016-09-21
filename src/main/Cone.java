@@ -1,6 +1,5 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+package main;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Cone.
  */
@@ -10,49 +9,51 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  *
  */
 public class Cone {
-	
+
 	/** The height. */
 	public float height;
-	
+
 	/** The radius. */
 	public float radius;
-	
+
 	/**
 	 * Instantiates a new cone.
 	 *
-	 * @param height the height
-	 * @param radius the radius
+	 * @param height
+	 *            the height
+	 * @param radius
+	 *            the radius
 	 */
 	public Cone(float height, float radius) {
 		this.height = height;
 		this.radius = radius;
 	}
-	
+
 	/**
 	 * Render the cone and show its specifications.
 	 *
 	 * @return the string
 	 */
-	public String Render(){
-		throw new NotImplementedException();
+	public String Render() {
+		return "";
 	}
-	
+
 	/**
 	 * Calculates the surface area of a cone.
 	 *
 	 * @return the float
 	 */
 	public float SurfaceArea() {
-		throw new NotImplementedException();
+		return 0;
 	}
-	
+
 	/**
 	 * Calculates the volume of a cone.
 	 *
 	 * @return the float
 	 */
 	public float Volume() {
-		throw new NotImplementedException();
+		return 0;
 	}
-	
+
 }
