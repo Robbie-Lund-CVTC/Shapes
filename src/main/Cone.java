@@ -8,7 +8,7 @@ package main;
  * @author Fong L
  *
  */
-public class Cone {
+public class Cone implements ICone {
 
 	/** The height. */
 	public float height;
@@ -27,6 +27,26 @@ public class Cone {
 	public Cone(float height, float radius) {
 		this.height = height;
 		this.radius = radius;
+	}
+
+	@Override
+	public void setHeight(float height) {
+		this.height = height;
+	}
+
+	@Override
+	public float getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setRadius(float radius) {
+		this.radius = radius;
+	}
+
+	@Override
+	public float getRadius() {
+		return radius;
 	}
 
 	/**

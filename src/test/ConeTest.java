@@ -11,18 +11,21 @@ import main.Cone;
  */
 public class ConeTest {
 
+	/** The Constant DELTA. */
+	private static final double DELTA = 1e-15;
+
 	/** The cone. */
-	private Cone cone = new Cone(0, 0);;
+	private Cone cone = new Cone(0, 0);
 
 	/**
 	 * Test cone constructor.
 	 */
 	@Test
 	public void testConeConstructor() {
-		Float height = cone.height;
-		Float radius = cone.radius;
-		assertEquals(Float.valueOf(0), height);
-		assertEquals(Float.valueOf(0), radius);
+		float height = cone.height;
+		float radius = cone.radius;
+		assertEquals(0, height, DELTA);
+		assertEquals(0, radius, DELTA);
 	}
 
 	/**
@@ -30,8 +33,8 @@ public class ConeTest {
 	 */
 	@Test
 	public void testHeight() {
-		Float result = cone.height;
-		assertEquals(Float.valueOf(0), result);
+		float result = cone.height;
+		assertEquals(0, result, DELTA);
 	}
 
 	/**
@@ -39,8 +42,8 @@ public class ConeTest {
 	 */
 	@Test
 	public void testRadius() {
-		Float result = cone.radius;
-		assertEquals(Float.valueOf(0), result);
+		float result = cone.radius;
+		assertEquals(0, result, DELTA);
 	}
 
 	/**
