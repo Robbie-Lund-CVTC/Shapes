@@ -1,18 +1,12 @@
 package main;
 
-public abstract class Shape {
-	
-	public Shape(){
-		
-	}
-	
-	public float SurfaceArea(){
-		return (Float) null;
+abstract class Shape {
+
+	public Shape() {
 	}
 
-	public float Volume(){
-		return (Float) null;
-	}
-	
+	abstract float SurfaceArea();
+
+	abstract float Volume();
 
 }
