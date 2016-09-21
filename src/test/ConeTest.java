@@ -12,10 +12,10 @@ import main.Cone;
 public class ConeTest {
 
 	/** The Constant DELTA. */
-	private static final double DELTA = 1e-15;
+	private static final double DELTA = 0.1;
 
 	/** The cone. */
-	private Cone cone = new Cone(0, 0);
+	private Cone cone = new Cone(10, 5);
 
 	/**
 	 * Test cone constructor.
@@ -24,8 +24,8 @@ public class ConeTest {
 	public void testConeConstructor() {
 		float height = cone.height;
 		float radius = cone.radius;
-		assertEquals(0, height, DELTA);
-		assertEquals(0, radius, DELTA);
+		assertEquals(10, height, DELTA);
+		assertEquals(5, radius, DELTA);
 	}
 
 	/**
@@ -34,7 +34,7 @@ public class ConeTest {
 	@Test
 	public void testHeight() {
 		float result = cone.height;
-		assertEquals(0, result, DELTA);
+		assertEquals(10, result, DELTA);
 	}
 
 	/**
@@ -43,7 +43,7 @@ public class ConeTest {
 	@Test
 	public void testRadius() {
 		float result = cone.radius;
-		assertEquals(0, result, DELTA);
+		assertEquals(5, result, DELTA);
 	}
 
 	/**
@@ -52,7 +52,22 @@ public class ConeTest {
 	@Test
 	public void testConeRender() {
 		String result = cone.Render();
-		assertEquals("", result);
+		String expected = "Height: " + cone.height + " Radius: " + cone.radius + " Volume: " + cone.Volume()
+				+ " Surface Area: " + cone.SurfaceArea();
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void testSurfaceArea() {
+		float result = cone.SurfaceArea();
+		assertEquals(254.16, result, DELTA);
+	}
+
+	@Test
+	public void testVolume() {
+		float result = cone.Volume();
+		assertEquals(261.8, result, DELTA);
 	}
 
 }

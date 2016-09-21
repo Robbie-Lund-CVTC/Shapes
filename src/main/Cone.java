@@ -55,7 +55,7 @@ public class Cone implements ICone {
 	 * @return the string
 	 */
 	public String Render() {
-		return "";
+		return "Height: " + height + " Radius: " + radius + " Volume: " + Volume() + " Surface Area: " + SurfaceArea();
 	}
 
 	/**
@@ -64,7 +64,7 @@ public class Cone implements ICone {
 	 * @return the float
 	 */
 	public float SurfaceArea() {
-		return 0;
+		return (float) (Math.PI * radius * (radius + Math.sqrt(Math.pow(height, 2) + Math.pow(radius, 2))));
 	}
 
 	/**
@@ -73,7 +73,7 @@ public class Cone implements ICone {
 	 * @return the float
 	 */
 	public float Volume() {
-		return 0;
+		return (float) (Math.PI * Math.pow(radius, 2) * height / 3);
 	}
 
 }
