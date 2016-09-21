@@ -102,12 +102,22 @@ public class Cuboid extends Shape implements ICuboid {
 		return "";
 	}
 
+	/**
+	 * Calculate and return the surface area of a cuboid.
+	 *
+	 * @return the float
+	 */
 	@Override
 	public float SurfaceArea() {
 		return 0;
 		// return 2 * width * length + 2 * length * height + 2 * height * width;
 	}
 
+	/**
+	 * Calculate and return the volume of a cuboid.
+	 *
+	 * @return the float
+	 */
 	@Override
 	public float Volume() {
 		return 0;
