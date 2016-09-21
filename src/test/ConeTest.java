@@ -7,7 +7,6 @@ import org.junit.Test;
 import main.Cone;
 import main.Constants;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class ConeTest.
  */
