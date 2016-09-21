@@ -5,8 +5,8 @@ abstract class Shape {
 	public Shape() {
 	}
 
-	abstract float SurfaceArea();
+	abstract public float SurfaceArea();
 
-	abstract float Volume();
+	abstract public float Volume();
 
 }
