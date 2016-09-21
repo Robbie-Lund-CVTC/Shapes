@@ -5,17 +5,22 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import main.Cone;
+import main.Constants;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class ConeTest.
  */
 public class ConeTest {
 
-	/** The Constant DELTA. */
-	private static final double DELTA = 0.1;
+	/** The height. */
+	private float height = 10;
+
+	/** The radius. */
+	private float radius = 5;
 
 	/** The cone. */
-	private Cone cone = new Cone(10, 5);
+	private Cone cone = new Cone(height, radius);
 
 	/**
 	 * Test cone constructor.
@@ -24,8 +29,8 @@ public class ConeTest {
 	public void testConeConstructor() {
 		float height = cone.height;
 		float radius = cone.radius;
-		assertEquals(10, height, DELTA);
-		assertEquals(5, radius, DELTA);
+		assertEquals(this.height, height, Constants.DELTA);
+		assertEquals(this.radius, radius, Constants.DELTA);
 	}
 
 	/**
@@ -34,7 +39,7 @@ public class ConeTest {
 	@Test
 	public void testHeight() {
 		float result = cone.height;
-		assertEquals(10, result, DELTA);
+		assertEquals(height, result, Constants.DELTA);
 	}
 
 	/**
@@ -43,7 +48,43 @@ public class ConeTest {
 	@Test
 	public void testRadius() {
 		float result = cone.radius;
-		assertEquals(5, result, DELTA);
+		assertEquals(radius, result, Constants.DELTA);
+	}
+
+	/**
+	 * Test set height.
+	 */
+	@Test
+	public void testSetHeight() {
+		cone.setHeight(height);
+		assertEquals(height, cone.height, Constants.DELTA);
+	}
+
+	/**
+	 * Test get height.
+	 */
+	@Test
+	public void testGetHeight() {
+		float result = cone.getHeight();
+		assertEquals(height, result, Constants.DELTA);
+	}
+
+	/**
+	 * Test set radius.
+	 */
+	@Test
+	public void testSetRadius() {
+		cone.setRadius(radius);
+		assertEquals(radius, cone.radius, Constants.DELTA);
+	}
+
+	/**
+	 * Test get radius.
+	 */
+	@Test
+	public void testGetRadius() {
+		float result = cone.getRadius();
+		assertEquals(radius, result, Constants.DELTA);
 	}
 
 	/**
@@ -58,16 +99,22 @@ public class ConeTest {
 		assertEquals(expected, result);
 	}
 
+	/**
+	 * Test surface area.
+	 */
 	@Test
 	public void testSurfaceArea() {
 		float result = cone.SurfaceArea();
-		assertEquals(254.16, result, DELTA);
+		assertEquals(254.16, result, Constants.DELTA);
 	}
 
+	/**
+	 * Test volume.
+	 */
 	@Test
 	public void testVolume() {
 		float result = cone.Volume();
-		assertEquals(261.8, result, DELTA);
+		assertEquals(261.8, result, Constants.DELTA);
 	}
 
 }

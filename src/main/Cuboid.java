@@ -1,25 +1,117 @@
 package main;
 
-public class Cuboid {
-	
+/**
+ * The Class Cuboid.
+ */
+public class Cuboid extends Shape implements ICuboid {
+
+	/** The height. */
 	public float height;
+
+	/** The length. */
+	public float length;
+
+	/** The width. */
 	public float width;
-	
-	public float volume (float height, float width, float length) {
-		float Volume;
-		Volume = height * width * length;
-		return Volume;
+
+	/**
+	 * Instantiates a new cuboid.
+	 *
+	 * @param height
+	 *            the height
+	 * @param length
+	 *            the length
+	 * @param width
+	 *            the width
+	 */
+	public Cuboid(float height, float length, float width) {
+		this.height = height;
+		this.length = length;
+		this.width = width;
 	}
-	
-	
-	public float SurfaceArea(float height, float width, float length) {
-		float SurfaceArea;
-		SurfaceArea = 2 * width * length + 2 * length * height + 2 * height * width;
-		return SurfaceArea;
-		
+
+	/**
+	 * Sets the height.
+	 *
+	 * @param height
+	 *            the new height
+	 */
+	@Override
+	public void setHeight(float height) {
+		this.height = height;
 	}
-	
-	public String Render (string render);
-	
-	System.out.println( helloString );
+
+	/**
+	 * Gets the height.
+	 *
+	 * @return the height
+	 */
+	@Override
+	public float getHeight() {
+		return 0;
+	}
+
+	/**
+	 * Sets the length.
+	 *
+	 * @param length
+	 *            the new length
+	 */
+	@Override
+	public void setLength(float length) {
+		this.length = length;
+	}
+
+	/**
+	 * Gets the length.
+	 *
+	 * @return the length
+	 */
+	@Override
+	public float getLength() {
+		return 0;
+	}
+
+	/**
+	 * Sets the width.
+	 *
+	 * @param width
+	 *            the new width
+	 */
+	@Override
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+	/**
+	 * Gets the width.
+	 *
+	 * @return the width
+	 */
+	@Override
+	public float getWidth() {
+		return 0;
+	}
+
+	/**
+	 * Render the cuboid and show its specifications
+	 *
+	 * @return the string
+	 */
+	public String Render() {
+		return "";
+	}
+
+	@Override
+	public float SurfaceArea() {
+		return 0;
+		// return 2 * width * length + 2 * length * height + 2 * height * width;
+	}
+
+	@Override
+	public float Volume() {
+		return 0;
+		// return height * width * length;
+	}
+
 }
