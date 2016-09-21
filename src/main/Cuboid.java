@@ -3,7 +3,7 @@ package main;
 /**
  * The Class Cuboid.
  */
-public class Cuboid extends Shape implements ICuboid {
+public class Cuboid extends Shape implements ICuboid, IRenderer {
 
 	/** The height. */
 	public float height;

@@ -3,7 +3,7 @@ package main;
 /**
  * The Class Cylinder.
  */
-public class Cylinder extends Shape implements ICylinder {
+public class Cylinder extends Shape implements ICylinder, IRenderer {
 
 	/** The diameter. */
 	public float diameter;

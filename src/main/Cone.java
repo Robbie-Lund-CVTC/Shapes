@@ -8,7 +8,7 @@ package main;
  * @author Fong L
  *
  */
-public class Cone extends Shape implements ICone {
+public class Cone extends Shape implements ICone, IRenderer {
 
 	/** The height. */
 	public float height;
