@@ -12,11 +12,11 @@ import main.Cylinder;
  */
 public class CylinderTest {
 
-	private float diameter = 5;
+	private float diameter = 0;
 
-	private float height = 8;
+	private float height = 4;
 
-	private float radius = 6;
+	private float radius = 3;
 
 	private Cylinder cylinder = new Cylinder(diameter, height, radius);
 
@@ -79,7 +79,7 @@ public class CylinderTest {
 	}
 
 	@Test
-	public void testGetWidth() {
+	public void testGetRadius() {
 		float result = cylinder.getRadius();
 		assertEquals(radius, result, Constants.DELTA);
 	}
@@ -87,20 +87,22 @@ public class CylinderTest {
 	@Test
 	public void testCylinderRender() {
 		String result = cylinder.Render();
-		String expected = "";
+		String expected = "Diameter: " + cylinder.diameter + " Height: " + cylinder.height + " Radius: "
+				+ cylinder.radius + " Volume: " + cylinder.Volume() + " Surface Area: " + cylinder.SurfaceArea();
+		;
 		assertEquals(expected, result);
 	}
 
 	@Test
 	public void testSurfaceArea() {
 		float result = cylinder.SurfaceArea();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(131.95, result, Constants.DELTA);
 	}
 
 	@Test
 	public void testVolume() {
 		float result = cylinder.Volume();
-		assertEquals(0, result, Constants.DELTA);
+		assertEquals(113.1, result, Constants.DELTA);
 	}
 
 }

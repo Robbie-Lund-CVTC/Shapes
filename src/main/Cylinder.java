@@ -19,7 +19,7 @@ public class Cylinder extends Shape implements ICylinder {
 
 	@Override
 	public float getDiameter() {
-		return 0;
+		return diameter;
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class Cylinder extends Shape implements ICylinder {
 
 	@Override
 	public float getHeight() {
-		return 0;
+		return height;
 	}
 
 	@Override
@@ -39,21 +39,22 @@ public class Cylinder extends Shape implements ICylinder {
 
 	@Override
 	public float getRadius() {
-		return 0;
+		return radius;
 	}
 
 	public String Render() {
-		return "";
+		return "Diameter: " + diameter + " Height: " + height + " Radius: " + radius + " Volume: " + Volume()
+				+ " Surface Area: " + SurfaceArea();
 	}
 
 	@Override
 	public float SurfaceArea() {
-		return 0;
+		return (float) (2 * Math.PI * radius * height + 2 * Math.PI * Math.pow(radius, 2));
 	}
 
 	@Override
 	public float Volume() {
-		return 0;
+		return (float) (Math.PI * Math.pow(radius, 2) * height);
 	}
 
 }
